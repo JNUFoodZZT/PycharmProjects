@@ -1,0 +1,12 @@
+f = open("1")
+f.seek(2)
+print(f.readline())
+
+f = open("seek_write","w")
+f.write("ava\n")
+print("返回光标当前位置： ",f.tell())
+f.write("bella\n")
+f.write("carol\n")
+print("返回光标当前位置： ",f.tell())
+f.seek(4)
+f.write("-----")
